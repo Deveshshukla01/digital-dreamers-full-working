@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of the page.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="name of author">
+    <title>The use of Color Palettes in Branding | Digital Dreamers</title>
+    
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+          
+            background-image: url(images/blogs/blogs-bg.jpg);
+        }
+
+       
+        #blog-container .blogs .post .img{
+            height: auto;
+            width: 750px;
+            border-radius: 15px;
+            
+        }
+       
+        #blog-container .blogs{
+            width: 60%;
+            margin: 0 auto;
+        }
+        #blog-container .blogs p{
+            text-align: justify;
+            padding-bottom: 60px;
+            
+        }
+        #blog-container .blogs .post h1{
+           color: #BB44F0;
+           font-size: 44px;
+            
+        }
+        #blog-container .blogs .post h3{
+           color: #BB44F0;
+           font-size: 36px;
+            
+        }
+       
+       
+
+        .container {
+            padding: 10px 10%;
+        }
+
+        .p {
+            color: #301934;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 180px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: #BB44F0;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #BB44F0;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .header-text {
+            margin-top: 15%;
+            font-size: 40px;
+            color: white;
+        }
+
+        .header-text h1 {
+            font-size: 60px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .header-text span {
+            color: #301934;
+        }
+        .bulletten-text{
+            color: #BB44F0;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #BB44F0;
+        }
+        nav .bi{
+    display: none;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #BB44F0;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #BB44F0;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #BB44F0;
+    color: white;
+}
+.next-previous{
+    display: flex;
+    align-content: row;
+}
+
+        @media only screen and (max-width: 600px) {
+
+            #blog-container .blogs .post h1{
+           color: #BB44F0;
+           font-size: 36px;
+            
+        }
+        #blog-container .blogs .post h3{
+           color: #BB44F0;
+           font-size: 28px;
+            
+        }
+        
+        #blog-container .blogs .post .img{
+            height: auto;
+            width: 350px;
+            border-radius: 15px;
+
+            
+        }
+          
+
+            .header-text {
+                margin-top: 100%;
+                font-size: 16px;
+            }
+
+            .header-text h1 {
+                font-size: 30px;
+            }
+
+            nav .bi{
+                display: block;
+                color: white;
+                font-size: 25px;
+                font-weight: bold;
+                
+            }
+            nav ul{
+                background: white;
+                color: #BB44F0;
+                position: fixed;
+                top: 0;
+                right: -200px;
+                width: 200px;
+                height: 100vh;
+                padding-top: 50px;
+                z-index: 2;
+                transition: right 0.5s;
+            }
+            
+        nav ul li{
+            display: block;
+            margin: 25px;
+            color: white;
+        }
+        nav ul .bi{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#portfolio">Blogs</a></li>
+                    <i class="bi bi-x-lg" style="color: #BB44F0;" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" style="color: #BB44F0;" onclick="openmenu()" style="color: white;"></i>
+            </nav>
+            <section id="blog-container">
+                <div class="blogs">
+                    <div class="post">
+                         <img class="img" src="/images/blog-3-landscape.png" alt="">
+                        <h1>The use of Color Palettes in Branding</h1><br>
+                        <p>One of the most important element of branding is the selection of color palettes which completely communicates brand's message to its audience. Color evokes emotions, which simply shapes the consumer behaviour in terms of purchasing a particular product or creating a demand of it. The selection of color palettes is usually done by a branding agency. This agency tries to create a visually appealing brand identity as to pass on their brand's message to their target audience. Creation of logos, brochures, business cards, mock-ups etc are then done according to the color palette only which simply means creation of a theme</p>
+                        <h3>Understanding Color Psychology</h3><br>
+                        <p>The study of human behaviour in accordance with color are known as color psychology. For example - <br>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">White</span>: Purity and simplicity</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Red</span>: Energy and Excitement</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Blue</span>: Trust and credibility</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Yellow</span>: Happiness and warmth</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Green</span>: Nature and health</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Purple</span>:  Luxury and sophistication</p>
+                            <p><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text">Black</span>: Authority and mystery.</p>
+                            Considering these elements brands can choose a more effective color palette that will directly communicate their message to the target audience    
+                                    
+                        </p>
+                        <h3>How to build a color palette?</h3><br>
+                        <p>A color palette usually consists of 3 main categories ie. primary color, secondary colors, and accent colors.
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Primary colors</span>: This is the main color that represents your brand. This color should be highly valued in the creatives and must have an essence of brand in it.</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Secondary colors</span>: These colors complement the primary color and are basically used to create visual interest. These colors highlights the different aspects of your brand's personality</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Accent colors</span>: Some colors also used to drive attention as well. These colors acts a highlighter and highlights main aspects or main information which needs to be taken into consideration by the target audience. Therefore these colors stands out in the creative ad acts as highlighter</p>
+                        </p>
+                        <h3>How Color contributes in brand recognition?</h3><br>
+                        <p>Colors plays a very vital role in creating brand recognition as well. These color palettes acts as a direct messenger to the target audience, building a sense of brand consistency and brand loyalty. Colors can shape the perceptions of the consumers, it has been observed that when consumers repeatedly see the same colors associated with your brand, it reinforces brand recall.</p>
+                        <h3>How Colors are perceived in different cultures?</h3><br>
+                        <p>It is very important for a brand to understand their target audience and work on color palettes accordingly. The cultural misconceptions may arose when a color palette is chosen which hurts the sentiments of the audience. Hence understanding the significance of the cultural norms these palettes should be chosen</p>
+                        <h3>Tips for Implementing Color Palettes in Branding</h3><br>
+                        <p> <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                        ">Consistency</span>: Brand should maintain a consistency in color palettes when it comes to Logos, brochures, websites, packaging, mock-ups etc</p>
+                        <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                        ">Contrast</span>:  A proper contrast between colors should be considered to make the creative more visually appealing and highlights the important aspects of the creatives</p>
+                        <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                        ">Testing</span>:  Color Testing should also be highly promoted in the brand's strategy so that new and creative color combinations could be explored and the most effective color palette could be chosen for driving more traffic and engagement.</p></p>
+                        <h3>Conclusion</h3>
+                        <p>In conclusion, it is evident that color palette can make or break a brand, because it has the power to shape the consumer's perception. A proper and a consistent color palette should be taken into consideration to drive more traffic as well as engagement for the brand and thus create a positive brand recognition</p>
+
+
+                    </div>
+                </div>
+            </section>
+            <div class="next-previous">
+                <a href="blogpage2.html" class="btn">previous</a>
+                <p>3/3</p>
+            <a href="blogs.html" class="btn">next</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of the page.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="name of author">
+    <title>Social Media Marketing | Digital Dreamers</title>
+    
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+          
+            background-image: url(images/blogs/blogs-bg.jpg);
+        }
+
+       
+        #blog-container .blogs .post .img{
+            height: auto;
+            width: 750px;
+            border-radius: 15px;
+
+            
+        }
+       
+        #blog-container .blogs{
+            width: 60%;
+            margin: 0 auto;
+        }
+        #blog-container .blogs p{
+            text-align: justify;
+            padding-bottom: 60px;
+            
+        }
+        #blog-container .blogs .post h1{
+           color: #BB44F0;
+           font-size: 44px;
+            
+        }
+        #blog-container .blogs .post h3{
+           color: #BB44F0;
+           font-size: 36px;
+            
+        }
+       
+       
+
+        .container {
+            padding: 10px 10%;
+        }
+
+        .p {
+            color: #301934;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 180px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: #BB44F0;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #BB44F0;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .header-text {
+            margin-top: 15%;
+            font-size: 40px;
+            color: white;
+        }
+
+        .header-text h1 {
+            font-size: 60px;
+            margin-top: 20px;
+            color: white;
+        }
+      
+        .header-text span {
+            color: #301934;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #BB44F0;
+        }
+        nav .bi{
+    display: none;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #BB44F0;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #BB44F0;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #BB44F0;
+    color: white;
+}
+.next-previous{
+    display: flex;
+    align-content: row;
+}
+.bulletten-text{
+    color: #BB44F0;
+}
+
+        @media only screen and (max-width: 600px) {
+
+            #blog-container .blogs .post h1{
+           color: #BB44F0;
+           font-size: 36px;
+            
+        }
+        #blog-container .blogs .post h3{
+            
+           color: #BB44F0;
+           font-size: 28px;
+            
+        }
+        
+        #blog-container .blogs .post .img{
+            height: auto;
+            width: 350px;
+            border-radius: 15px;
+
+            
+        }
+          
+
+            .header-text {
+                margin-top: 100%;
+                font-size: 16px;
+            }
+
+            .header-text h1 {
+                font-size: 30px;
+            }
+
+            nav .bi{
+                display: block;
+                color: white;
+                font-size: 25px;
+                font-weight: bold;
+                
+            }
+            nav ul{
+                background: white;
+                color: #BB44F0;
+                position: fixed;
+                top: 0;
+                right: -200px;
+                width: 200px;
+                height: 100vh;
+                padding-top: 50px;
+                z-index: 2;
+                transition: right 0.5s;
+            }
+            
+        nav ul li{
+            display: block;
+            margin: 25px;
+            color: white;
+        }
+        nav ul .bi{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                  
+                    <i class="bi bi-x-lg" style="color: #BB44F0;" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" style="color: #BB44F0;" onclick="openmenu()" style="color: white;"></i>
+            </nav>
+            <section id="blog-container">
+                <div class="blogs">
+                    <div class="post">
+                         <img class="img" src="images/Social media management.png" alt="">
+                        <h1>Social Media Marketing</h1><br>
+                        <p>These days social media is the most powerful tool for driving engagement and connecting the business with it's target audience. We at Digital Dreamers, not only create social media campaigns but also aims to build a community you've not yet witnessed. We have an expert team build specifically to boost your brand identity on platforms like Facebook, Instagram, Twitter, LinkedIn, and more.</p>
+                        <h3>What We Offer:</h3><br>
+                     
+                             <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Content Creation</span>:Weekly and Monthly high quality content for every day social media posting</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Community Engagement</span>: Active reach and engagement with your audience to build trust and credibility</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                            ">Advertising Campaigns</span>: Targeted Meta ads that reach your target customers.</p>
+                            <p style="padding: 0;"><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                                ">Competitor Analysis</span>: In-depth analysis and insights to understand what you're competitors are doing and what you can implement from their social media strategies.</p>
+                            <p><i style="color: #BB44F0;" class="bi bi-dot"></i><span class="bulletten-text
+                                    ">Influencer Collaboration</span>: Partnering with influencers to amplify your brand message.</p>    
+                        
+                        <p>Let's Grow your brand's social media presence and connect with your target audience on a more deeper level.</p>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    
+    </script>
+</body>
+</html>
